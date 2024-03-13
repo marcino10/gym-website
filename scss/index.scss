@@ -1,0 +1,97 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 300vh;
+}
+
+body {
+	width: 100%;
+}
+
+.text--orange {
+	color: #ee573a;
+}
+
+.link {
+	text-decoration: none;
+
+	&:visited {
+		color: inherit;
+	}
+
+	&:active {
+		color: inherit;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2rem 5rem;
+	background-color: rgba(25, 26, 31, 0.35);
+	text-transform: uppercase;
+
+	&__list {
+		@include flex-center();
+		gap: 2.5rem;
+		list-style-type: none;
+		font-size: 1.5rem;
+	}
+
+	&__item {
+		color: whitesmoke;
+
+		&:hover {
+			color: #ee573a;
+		}
+	}
+}
+
+.header-text {
+	font-size: 3rem;
+	color: whitesmoke;
+}
+
+.welcome-banner {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: rgba(47, 59, 65, 0.671);
+	color: whitesmoke;
+	text-transform: uppercase;
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -2;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__text {
+	}
+
+	&__header {
+	}
+
+	&__btn {
+		background-color: #fff;
+	}
+}
