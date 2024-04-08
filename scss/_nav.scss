@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.nav {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	padding: 2rem 5rem;
+	background-color: rgba(141, 141, 145, 0.671);
+	text-transform: uppercase;
+
+	&__wrapper {
+		width: 85%;
+		max-width: 1050px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list {
+		@include flex-center();
+		gap: 2.5rem;
+		list-style-type: none;
+		font-size: 1.5rem;
+	}
+
+	&__item {
+		color: whitesmoke;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.header-text {
+	font-size: 3rem;
+	color: whitesmoke;
+}

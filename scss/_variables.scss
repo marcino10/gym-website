@@ -1,3 +1,9 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 $orange: #ee573a;
 $orange-lighter: #d35c45;
 $grey: #636262;
