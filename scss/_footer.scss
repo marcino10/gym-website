@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+.footer {
+	height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    background-color: rgba(141, 141, 145, 0.795);
+    color: whitesmoke;
+
+    .orange {
+        color: red;
+    }
+}

@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-color: inherit;
+	background-color: transparent;
 	box-sizing: border-box;
 }
 
@@ -21,8 +21,15 @@ body {
 	width: 100%;
 }
 
-.btn:hover {
-	cursor: pointer;
+.btn {
+	&:hover {
+		cursor: pointer;
+	}
+
+	&--orange {
+		color: whitesmoke;
+		background-color: $orange;
+	}
 }
 
 .link {
